@@ -54,57 +54,17 @@ jQuery(function ($) {
         });
     }());
 
-    // --------------------------------------------------------------------
-    // Google Map
-    // --------------------------------------------------------------------
-
-    (function () {
-        if ($('#googleMap').length > 0) {
-
-            //set your google maps parameters
-            var $latitude  = 39.930203, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
-                $longitude = 32.859088,
-                $map_zoom  = 17;
-            /* ZOOM SETTING */
-
-            //google map custom marker icon
-            var $marker_url = 'img/google-map-marker.png';
-
-            //we define here the style of the map
-            var style = [{
-                "stylers" : [{
-                    "hue" : "#000"
-                }, {
-                    "saturation" : 0
-                }, {
-                    "gamma" : 0
-                }, {
-                    "lightness" : 0
-                }]
-            }];
-
-            //set google map options
-            var map_options = {
-                center            : new google.maps.LatLng($latitude, $longitude),
-                zoom              : $map_zoom,
-                panControl        : false,
-                zoomControl       : true,
-                mapTypeControl    : false,
-                streetViewControl : false,
-                mapTypeId         : google.maps.MapTypeId.ROADMAP,
-                scrollwheel       : false,
-                styles            : style,
-            }
-            //initialize the map
-            var map = new google.maps.Map(document.getElementById('googleMap'), map_options);
-            //add a custom marker to the map
-            var marker = new google.maps.Marker({
-                position : new google.maps.LatLng($latitude, $longitude),
-                map      : map,
-                visible  : true,
-                icon     : $marker_url
-            });
-        }
-    }());
-
 }); // JQuery end
+
+
+ function initMap() {
+    var uluru = {lat: 39.930203, lng: 32.859088};
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+      zoom: 16,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }

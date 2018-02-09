@@ -911,3 +911,11 @@ button:focus,
 .no-touch .flex-direction-nav li a:hover {
     background: transparent !important;
 }
+
+.section-wrapper p {
+    font-size: 17px !important;
+}
+
+section#section-venue {
+    padding: 100px 0 0 0;
+}
