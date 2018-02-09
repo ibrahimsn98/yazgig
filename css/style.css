@@ -885,3 +885,29 @@ button:focus,
 .cent .media label {
     margin-bottom: 0px;
 }
+
+.sec-bg {
+    background-image: url('../img/countdown-bg.jpg');
+}
+
+.sec-bg h1 {
+    color: #fff !important;
+}
+
+.sec-bg ul.cd-author-info li {
+    font-size: 16px !important;
+    color: #fff !important;
+    font-family : 'Roboto', sans-serif !important;
+}
+
+.cd-testimonials-wrapper {
+    background-color: transparent !important;
+}
+
+.cd-testimonials-wrapper::after {
+    background: transparent !important;
+}
+
+.no-touch .flex-direction-nav li a:hover {
+    background: transparent !important;
+}
