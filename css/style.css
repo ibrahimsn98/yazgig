@@ -550,6 +550,11 @@ button:focus,
     box-shadow: 3px 3px 15px grey;
     }
 
+    .team .thumbnail img.mini {
+    width : 130px;
+    box-shadow: 3px 3px 15px grey;
+    }
+
 .team .thumbnail .caption {
     padding          : 10px;
     }
@@ -562,7 +567,6 @@ button:focus,
     text-transform   : uppercase;
     padding          : 10px 0;
     }
-
 
 
 .team .thumbnail h3 small {
