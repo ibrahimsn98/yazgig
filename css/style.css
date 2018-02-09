@@ -412,6 +412,7 @@ button:focus,
 .jumbotron .content .event-desc {
     font-size     : 28px;
     margin-bottom : 25px;
+    line-height: 35px;
     }
 
 .jumbotron .content .event-second-desc {
@@ -861,42 +862,27 @@ button:focus,
 }
 
 .cent {
-    width: 100%;
+    text-align: center;
 }
 
 .cent .media {
-    width: 45%;
-    margin: 10px 2.5%;
-    float: left;
-    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .cent .media img {
     width: 50px;
     padding: 10px;
-    margin-right: 15px;
 }
 
 .cent .media.facebook {
     background: #3b5998;
 }
 
-.cent .media.facebook img {
-    background: #324b89;
-}
 
 .cent .media.twitter {
      background: #55adee;
-}
-
-.cent .media.twitter img {
-    background: #0098da;
-}
-
-.cent .media label {
-    margin-bottom: 0px;
-    padding: 10px;
-    cursor: pointer;
 }
 
 .sec-bg {
