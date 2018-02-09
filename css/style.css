@@ -384,7 +384,7 @@ button:focus,
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
-    font-family       : 'Advent Pro', sans-serif;
+    font-family: 'Kelly Slab', cursive;
     top               : 45%;
     left              : 0;
     right             : 0;
@@ -437,7 +437,7 @@ button:focus,
 
 .jumbotron .content .count-down .parts .part label.value {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 45px;
 }
 
@@ -862,28 +862,41 @@ button:focus,
 
 .cent {
     width: 100%;
-    text-align: center;
 }
 
 .cent .media {
     width: 45%;
     margin: 10px 2.5%;
     float: left;
-    padding: 0px 10px 0px 5px;
+    color: #fff;
+}
+
+.cent .media img {
+    width: 50px;
+    padding: 10px;
+    margin-right: 15px;
 }
 
 .cent .media.facebook {
-    border: 2px solid #3b5998;
-    color: #3b5998;
+    background: #3b5998;
+}
+
+.cent .media.facebook img {
+    background: #324b89;
 }
 
 .cent .media.twitter {
-    border: 2px solid #55adee;
-     color: #55adee;
+     background: #55adee;
+}
+
+.cent .media.twitter img {
+    background: #0098da;
 }
 
 .cent .media label {
     margin-bottom: 0px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .sec-bg {
@@ -918,4 +931,8 @@ button:focus,
 
 section#section-venue {
     padding: 100px 0 0 0;
+}
+
+section h1 {
+    font-family: 'Kelly Slab', cursive;
 }
