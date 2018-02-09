@@ -150,6 +150,20 @@ ul {
     padding   : 15px 30px
     }
 
+.btn-reverse {
+    background   : transparent;
+    color        : #fd367e;
+    border-color : #fd367e;
+}
+
+.btn-reverse:hover,
+.btn-reverse:focus,
+.btn-reverse:active:focus {
+    background-color : #fd367e;
+    border-color     : #fd367e;
+    color: #fff;
+    }
+
 /*btn-primary*/
 .btn-primary {
     background-color : #fd367e;
@@ -836,4 +850,8 @@ button:focus,
 
 .my-gallery figcaption {
   display: none;
+}
+
+.img-full-page {
+    width: 100%;
 }
